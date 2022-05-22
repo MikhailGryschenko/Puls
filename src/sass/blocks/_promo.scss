@@ -2,30 +2,63 @@
     min-height: 650px;
     padding: 21px 0 93px 0;
     background: url(../../img/BG1.png) center (center/cover) no-repeat;
-    .row {
-        .wrapper {
+    &__header {
+        margin-top: 165px;
+        text-align: end;
+        font-size: 42px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__subheader {
+        margin-top: 17px;
+        text-align: end;
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    
+    .logos {
+        margin-top: 66px;
+        display: flex;
+        justify-content: space-between;
+        .logo {
             display: flex;
-            justify-content: space-between;
-            .logo {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                &__timer {
-                    width: 42px;
-                    height: 46px;
-                }
-                &__descr {
-                    margin-top: 20px;
-                    text-align: center;
-                    font-size: 14px;
-                    font-weight: 500;
+            flex-direction: column;
+            align-items: center;
+            &__timer {
+                width: 42px;
+                height: 46px;
+            }
+            &__descr {
+                margin-top: 20px;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+                color: #ffffff;
+            }
+        }
+    }
+    .wrapper {
+        margin-top: 67px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .gocatalog {
+            margin-top: 18px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #ffffff;
+            a {
+                text-decoration: underline;
+                text-transform: uppercase;
+                color: #ffffff;
+                &:hover {
                     color: #ffffff;
                 }
             }
         }
-
-       
-
     }
    
 
