@@ -2,7 +2,9 @@
     min-height: 470px;
     padding: 70px 0 78px 0;
     background: url(../img/BG2_white.png) center (center/cover) no-repeat;
-    
+        h2 {
+            text-align: center;
+        }
     &__descr {
         display: flex;
         flex-direction: column;

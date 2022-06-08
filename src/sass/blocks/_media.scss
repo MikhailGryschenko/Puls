@@ -28,12 +28,54 @@
         h2 {
             font-size: 28px;
         }
+        &__descr {
+            font-size: 18px;
+        }
     }
 }
-/* @media (max-width: 1199px)
+@media (max-width: 1199px) {
+    .promo {
+        .promo__header {
+            font-size: 32px;
+        }
+        .promo__subheader {
+            font-size: 18px;
+        }
+    }
+    .benefits {
+        .benefits__descr {
+            .text {
+                &__header {
+                    margin-top: 20px;
+                    font-size: 15px;
+                }
+                &__main {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
 
-@media (max-width: 991px)
+@media (max-width: 991px) {
+    .promo {
+        .promo__header {
+            margin-top: 50px;
+        }
+        .promo__subheader {
+            margin-top: 10px;
+        }
+    }
+}
 
-@media (max-width: 767px)
-
-@media (max-width: 575px) */
+@media (max-width: 575px) {
+    .promo {
+        .header {
+            &__contacts {
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
