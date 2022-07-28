@@ -143,4 +143,12 @@
             }
         }
     }
+    .overlay {
+        .window {
+            &__close {
+                top: 15px;
+                right: 15px;
+            }
+        }
+    }
 }
