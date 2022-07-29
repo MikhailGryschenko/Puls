@@ -52,4 +52,31 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         });
     });
+
+    function validateForms (form) {
+        $(form).validate( {
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Пожалуйста, введите своё имя",
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                    required: "Пожалуйста, введите свою почту",
+                    email: "Не правильно введён адрес почты"
+                }
+            }
+        });
+    }
+
+    validateForms ('#consultation-form');
+    validateForms ('#consultation form');
+    validateForms ('#order form');
+
+    $('input[name=phone]').mask("+375 (99) 999-99-99");
 });
