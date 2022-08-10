@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/style.min.css"> <!-- последним подключаем наш файл стилей -->
 </head>
 <>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <div class="row">
@@ -103,7 +103,7 @@
                 <div class="col-md-4 col-lg-3">
                     <div class="benefits__descr">
                         <div class="logo">
-                         <img src="icons/heart.png" alt="cup">  
+                         <img src="icons/heart.png" alt="heart" class="logo__icon_animated">  
                         </div>
                         <div class="text">
                             <div class="text__header">Заботимся о здоровье</div>
@@ -115,7 +115,7 @@
                 <div class="col-md-4 col-lg-3">
                     <div class="benefits__descr">
                         <div class="logo">
-                         <img src="icons/shoe.png" alt="cup">  
+                         <img src="icons/shoe.png" alt="shoe">  
                         </div>
                         <div class="text">
                             <div class="text__header">Учим бегать</div>
@@ -152,9 +152,9 @@
             <div class="row justify-content-start">
                 <div class="col-md-5 offset-md-1">
                     <form id='consultation-form' class="feed-form" action="#">
-                        <input name="name" required placeholder="Ваше имя" type="text">
-                        <input name="phone" required placeholder="Ваш телефон">
-                        <input name="email" required placeholder="Ваш E-mail" type="email">
+                        <input name="name" placeholder="Ваше имя" type="text">
+                        <input name="phone" placeholder="Ваш телефон">
+                        <input name="email" placeholder="Ваш E-mail" type="email">
                         <!-- <input type="submit" value="заказать кОНСУЛЬТАЦИЮ"> -->
                         <button class="button button_submit">заказать КОНСУЛЬТАЦИЮ</button>
                     </form>
@@ -575,9 +575,9 @@
                     <div class="window__subtitle">Ваш заказ:</div>
                     <div class="window__descr">Пульсометр Polar FT1</div>
                     <form class="feed-form feed-form_mt25" action="#">
-                        <input name="name" required placeholder="Ваше имя" type="text">
-                        <input name="phone" required placeholder="Ваш телефон">
-                        <input name="email" required placeholder="Ваш E-mail" type="email">
+                        <input name="name" placeholder="Ваше имя" type="text">
+                        <input name="phone" placeholder="Ваш телефон">
+                        <input name="email" placeholder="Ваш E-mail" type="email">
                         <button class="button button_submit">Купить</button>
                     </form>
                 </div>
@@ -593,6 +593,10 @@
             </div>
         </div>
     </div>
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
+    
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
